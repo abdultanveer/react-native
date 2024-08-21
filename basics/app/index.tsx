@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, Image } from "react-native";
 import React from "react";
 import DirectionLayout from "./components/directionlayout";
 const styles = StyleSheet.create({
@@ -24,17 +24,14 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <DirectionLayout />
+      <Image
+        source={require("../assets/images/icon.png")}
+        style={{ width: 100, height: 100 }}
+      />
 
-      <Text style={styles.bigBlue}>
-        Edit app/index.tsx to edit this screen.
-      </Text>
-      <View
-        style={{
-          width: 50,
-          height: 50,
-          backgroundColor: "powderblue",
-        }}
+      <Image
+        source={{ uri: "https://reactjs.org/logo-og.png" }}
+        style={{ width: 400, height: 400 }}
       />
     </View>
   );
