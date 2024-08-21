@@ -2,6 +2,7 @@ import { Text, View, StyleSheet, Image, Button } from "react-native";
 import React from "react";
 import DirectionLayout from "./components/directionlayout";
 import TextInputExample from "./components/TextExample";
+import MyFlatList from "./components/flatlist";
 const styles = StyleSheet.create({
   container: {
     marginTop: 50,
@@ -25,7 +26,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-     <TextInputExample/>
+      <MyFlatList />
     </View>
   );
 }
