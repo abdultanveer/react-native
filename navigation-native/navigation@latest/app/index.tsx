@@ -4,7 +4,9 @@ import { Button, Text, View } from "react-native";
 const router = useRouter();
 
 export default function Index() {
-  return (
+  return (    
+    
+  
     <View
       style={{
         flex: 1,
@@ -21,4 +23,5 @@ export default function Index() {
       />
     </View>
   );
+  
 }
