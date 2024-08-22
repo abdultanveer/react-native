@@ -1,7 +1,25 @@
 import { Link, useRouter } from "expo-router";
-import { Button, Text, View } from "react-native";
+import { Button, Text, View,StyleSheet, Platform } from "react-native";
 
 const router = useRouter();
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    ...Platform.select({
+      ios: {
+        backgroundColor: 'red',
+      },
+      android: {
+        backgroundColor: 'green',
+      },
+      default: {
+        // other platforms, web for example
+        backgroundColor: 'blue',
+      },
+    }),
+  },
+});
 
 export default function Index() {
   return (    
