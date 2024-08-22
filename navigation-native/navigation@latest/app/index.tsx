@@ -1,4 +1,4 @@
-import { useRouter } from "expo-router";
+import { Link, useRouter } from "expo-router";
 import { Button, Text, View } from "react-native";
 
 const router = useRouter();
@@ -13,6 +13,8 @@ export default function Index() {
       }}
     >
       <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Link href="./about">About</Link>
+
       <Button
         title="Go to Details"
         onPress={() => router.push('/home')}
