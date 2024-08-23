@@ -7,6 +7,7 @@ import SettingsScreen from "./mytabs/SettingsScreen";
 import { Ionicons } from "@expo/vector-icons";
 import MovieScreen from "./movies/MovieScreen";
 import Addtodo from "./todos/Addtodo";
+import LoginForm from "./todos/LoginForm";
 
 const Tab = createBottomTabNavigator();
 
@@ -38,7 +39,7 @@ export default function Index() {
           component={MovieScreen}
           options={{ tabBarBadge: 3 }}
         />
-        <Tab.Screen name="AddTodo" component={Addtodo} />
+        <Tab.Screen name="Login" component={LoginForm} />
       </Tab.Navigator>
     </NavigationContainer>
   );
