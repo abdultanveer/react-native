@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
       },
       default: {
         // other platforms, web for example
-        backgroundColor: 'blue',
+        backgroundColor: 'white',
       },
     }),
   },
