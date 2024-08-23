@@ -18,7 +18,16 @@ export default function Index() {
         <Stack.Screen
           name="Home"
           component={Home}
-          options={{ title: "Dashboard" }}
+          options={{
+            title: "My home",
+            headerStyle: {
+              backgroundColor: "#f4511e",
+            },
+            headerTintColor: "#fff",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+          }}
         />
         <Stack.Screen
           name="Details"
