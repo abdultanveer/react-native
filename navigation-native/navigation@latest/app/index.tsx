@@ -31,7 +31,11 @@ export default function Index() {
           tabBarInactiveTintColor: "gray",
         })}
       >
-        <Tab.Screen name="Home" component={Homescreen} />
+        <Tab.Screen
+          name="Home"
+          component={Homescreen}
+          options={{ tabBarBadge: 3 }}
+        />
         <Tab.Screen name="Settings" component={SettingsScreen} />
       </Tab.Navigator>
     </NavigationContainer>
