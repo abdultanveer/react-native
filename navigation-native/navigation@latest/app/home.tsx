@@ -1,12 +1,5 @@
-import { Text, View, StyleSheet, Platform } from "react-native";
+import { Text, View, StyleSheet, Platform, Button } from "react-native";
 
-// const styles = StyleSheet.create({
-//   bigBlue: {
-//     color: Platform.OS === "ios" ? "blue" : "red",
-//     fontWeight: "bold",
-//     fontSize: 30,
-//   },
-// });
 
 const styles = StyleSheet.create({
   container: {
@@ -26,10 +19,14 @@ const styles = StyleSheet.create({
   },
 });
 
-export default function Home() {
+export default function Home({navigation}) {
   return (
     <View style={styles.container}>
       <Text >Home screen</Text>
+      <Button
+        title="Go to Details"
+        onPress={() => navigation.navigate('Details')}
+      />
     </View>
   );
 }
