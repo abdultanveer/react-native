@@ -5,6 +5,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import Home from "./home";
 import Details from "./screens/details";
 import CreatePostScreen from "./screens/createPost";
+import profile from "./screens/profile";
 
 const router = useRouter();
 
@@ -27,6 +28,12 @@ export default function Index() {
         <Stack.Screen
           name="CreatePost"
           component={CreatePostScreen}
+          options={{ title: "write mail" }}
+        />
+
+        <Stack.Screen
+          name="Profile"
+          component={profile}
           options={({ route }) => ({ title: route.params.name })}
         />
       </Stack.Navigator>
