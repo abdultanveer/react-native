@@ -5,6 +5,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import Homescreen from "./mytabs/homescreen";
 import SettingsScreen from "./mytabs/SettingsScreen";
 import { Ionicons } from "@expo/vector-icons";
+import MovieScreen from "./movies/MovieScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -32,8 +33,8 @@ export default function Index() {
         })}
       >
         <Tab.Screen
-          name="Home"
-          component={Homescreen}
+          name="Movie"
+          component={MovieScreen}
           options={{ tabBarBadge: 3 }}
         />
         <Tab.Screen name="Settings" component={SettingsScreen} />
