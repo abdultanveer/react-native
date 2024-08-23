@@ -24,10 +24,10 @@ export default function Index() {
           component={Details}
           initialParams={{ itemId: 42 }}
         />
-         <Stack.Screen
+        <Stack.Screen
           name="CreatePost"
           component={CreatePostScreen}
-          options={{ title: "write mail" }}
+          options={({ route }) => ({ title: route.params.name })}
         />
       </Stack.Navigator>
     </NavigationContainer>
