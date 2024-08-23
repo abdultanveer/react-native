@@ -13,11 +13,16 @@ export default function Index() {
   return (
     <NavigationContainer independent={true}>
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={Home}   
-        options={{ title: 'Dashboard' }}
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{ title: "Dashboard" }}
         />
-        <Stack.Screen name="Details" component={Details} />
-
+        <Stack.Screen
+          name="Details"
+          component={Details}
+          initialParams={{ itemId: 42 }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
